@@ -1,3 +1,2 @@
-v = 3 + 2j
-print(v.real)
-print(v.imag)
+v = complex(3, 2)
+print(v)
