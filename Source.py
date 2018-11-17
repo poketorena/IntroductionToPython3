@@ -1,2 +1,3 @@
-a = (10+2j) * (2+5j)
-print(a)
+v = 3 + 2j
+print(v.real)
+print(v.imag)
