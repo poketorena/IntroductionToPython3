@@ -1,5 +1,5 @@
-a = 0.08
-b = 98.5
-c = -3.5
-print(a, b, c)
-print(a + b + c)
+a = .99
+b = 10.
+c = 99
+d = 10
+print(a, b, c, d)
