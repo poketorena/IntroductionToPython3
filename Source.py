@@ -1,4 +1,3 @@
-a = 10
-A = 20
-print(a)
-print(A)
+a = 100
+b = 200
+print(a+b)
