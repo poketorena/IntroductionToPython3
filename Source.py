@@ -1,4 +1,5 @@
-a = -3
-b = 0
-c = 5
+a = 0.08
+b = 98.5
+c = -3.5
+print(a, b, c)
 print(a + b + c)
