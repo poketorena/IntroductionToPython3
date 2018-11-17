@@ -1,3 +1,3 @@
-print(23.5)
-print(round(23.4))
-print(round(23.5))
+print(round(23.51))
+print(round(23.54 * 10) / 10)
+print(round(23.55 * 10) / 10)
