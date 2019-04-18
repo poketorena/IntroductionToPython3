@@ -1,8 +1,10 @@
-from random import randint
-a = randint(0, 100)
-b = randint(0, 100)
-
-bigger = a if a > b else b
-
-text = f"{a}と{b}では{bigger}が大きい"
-print(text)
+numlist = [3, 4.2, 10, "x", 1, 9]
+# numlist = [3, 4.2, 10, 1, 9]
+sum = 0
+for num in numlist:
+    if not isinstance(num, (int, float)):
+        print(num, "数値でない値が含まれていました。")
+        break
+    sum += num
+else:
+    print("合計", sum)
