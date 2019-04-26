@@ -1,2 +1,2 @@
-data = [1, 2, 3] * 5
-print(data)
+thelist = list(range(-5, 6))
+print(thelist)
