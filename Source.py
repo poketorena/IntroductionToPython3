@@ -1,9 +1,8 @@
-a = 10
-b = 20
-c = 30
-abc = [a, b, c]
-print(abc)
-# 代入しても
-b = 99
-# リストの要素の値は変わらない！
-print(abc)
+numbers = [4, 8, 15, 16, 23, 42]
+print(numbers)
+
+words = ["flower", "bird", "wind", "moon"]
+print(words)
+
+mixture = [20, 30, "dog", "cat", True, False]
+print(mixture)
