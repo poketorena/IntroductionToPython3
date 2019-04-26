@@ -1,8 +1,9 @@
-num = 0
-try:
-    value = 120 / num
-    print(value)
-except:
-    print("エラーになりました。")
-finally:
-    print("計算終わり。")
+a = 10
+b = 20
+c = 30
+abc = [a, b, c]
+print(abc)
+# 代入しても
+b = 99
+# リストの要素の値は変わらない！
+print(abc)
