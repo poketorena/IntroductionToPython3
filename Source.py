@@ -1,5 +1,15 @@
-list_happy = list("happy")
-print(list_happy)
+colors = ["blue", "red", "green", "yellow"]
 
-week = list("日月火水木金土")
-print(week)
+print(colors)
+
+print(colors[0])
+
+print(colors[1])
+
+print(colors[2])
+
+print(colors[3])
+
+print(colors[-1])
+
+print(colors[-2])
