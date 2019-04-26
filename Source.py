@@ -1,10 +1,8 @@
-numlist = [3, 4.2, 10, "x", 1, 9]
-# numlist = [3, 4.2, 10, 1, 9]
-sum = 0
-for num in numlist:
-    if not isinstance(num, (int, float)):
-        print(num, "数値でない値が含まれていました。")
-        break
-    sum += num
-else:
-    print("合計", sum)
+num = 0
+try:
+    value = 120 / num
+    print(value)
+except:
+    print("エラーになりました。")
+finally:
+    print("計算終わり。")
