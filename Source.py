@@ -1,8 +1,6 @@
-numbers = [4, 8, 15, 16, 23, 42]
-print(numbers)
-
-words = ["flower", "bird", "wind", "moon"]
-print(words)
-
-mixture = [20, 30, "dog", "cat", True, False]
-print(mixture)
+data = [
+    11, 22, 33, 44, 55,  # コメント
+    66, 77,  # コメント
+    88, 99, 100
+]
+print(data)
