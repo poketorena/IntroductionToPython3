@@ -1,6 +1,8 @@
-data = [
-    11, 22, 33, 44, 55,  # コメント
-    66, 77,  # コメント
-    88, 99, 100
-]
-print(data)
+zeros = [0] * 5
+print(zeros)
+
+strs = ["xy"] * 6
+print(strs)
+
+results = [False] * 7
+print(results)
