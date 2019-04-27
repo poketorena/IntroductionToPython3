@@ -1,5 +1,6 @@
-fruits = ["apple", "orange", "banana", "peach"]
-print(fruits)
-dessert = fruits.pop(0)
-print(dessert)
-print(fruits)
+colors = ["blue", "red", "yellow", "red", "green"]
+print("削除前", colors)
+target = "red"
+if target in colors:
+    colors.remove(target)
+print("削除後", colors)
