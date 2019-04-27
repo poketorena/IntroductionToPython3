@@ -1,6 +1,3 @@
-colors = ["blue", "red", "yellow", "red", "green"]
-print("削除前", colors)
-target = "red"
-while target in colors:
-    colors.remove(target)
-print("削除後", colors)
+result = "23,45,56,87,90,123,231,256,321"
+result_list = result.split(",", 3)
+print(result_list)
