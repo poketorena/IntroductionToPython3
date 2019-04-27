@@ -1,15 +1,8 @@
+pos = int(input("取り出す位置:"))  # リストから取り出す位置入力する
 colors = ["blue", "red", "green", "yellow"]
-
-print(colors)
-
-print(colors[0])
-
-print(colors[1])
-
-print(colors[2])
-
-print(colors[3])
-
-print(colors[-1])
-
-print(colors[-2])
+length = len(colors)  # リストの長さ（要素の個数）
+if -length <= pos < length:
+    item = colors[pos]
+    print(item)
+else:
+    print("エラーになりました。")
