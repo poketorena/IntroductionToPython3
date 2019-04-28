@@ -1,12 +1,6 @@
-a = (1, 2, 3)
-b = a
-c = (1, 2, 3)
-
-print(a == b)
-print(a is b)
-print(a == c)
-print(a is c)  # Falseのはずだけど同じidが割り当てられることもある？？？
-
-print(id(a))
-print(id(b))
-print(id(c))
+x = [1, 2, 3]
+y = [4, 5, 6]
+z = [7, 8, 9]
+zip_obj = zip(x, y, z)
+xyz = list(zip_obj)
+print(xyz)
