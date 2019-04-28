@@ -1,3 +1,3 @@
-color = ["blue", "black", "green"]
-data = tuple(color)
+color = ("blue", "black", "green")
+data = list(color)
 print(data)
