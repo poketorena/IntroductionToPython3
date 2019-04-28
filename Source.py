@@ -1,2 +1,2 @@
-data = tuple(range(-5, 6))
-print(data)
+week = tuple("日月火水木金土")
+print(week)
