@@ -1,2 +1,3 @@
-week = tuple("日月火水木金土")
-print(week)
+color = ["blue", "black", "green"]
+data = tuple(color)
+print(data)
