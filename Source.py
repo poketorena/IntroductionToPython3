@@ -1,3 +1,3 @@
-color = ("green", "red", "blue", "yellow")
-
-color[1] = "orange"
+(a, b) = (100, 200)
+print(a)
+print(b)
