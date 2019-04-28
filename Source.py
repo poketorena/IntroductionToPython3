@@ -1,9 +1,7 @@
-colors = ["blue", "red", "green", "yellow", "pink", "black", "white"]
-print(colors[:])
-print(colors[3:])
-print(colors[:3])
-print(colors[3:6])
-print(colors[-1:])
-print(colors[-2:])
-print(colors[-2:-1])
-print(colors[:-1])
+data = [10, 21, 35, 49, 51, 60, 77, 81, 92, 100]
+n = 3
+data1 = data[:n]  # 最初からn-1まで
+data2 = data[n:]  # nから最後まで
+
+print(data1)
+print(data2)
