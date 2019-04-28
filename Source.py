@@ -1,6 +1,4 @@
-numbers = (4, 8, 15, 16, 23, 42)
-num = int(input("受験番号を入力してください。："))
-if num in numbers:
-    print("合格です。")
-else:
-    print("不合格です。")
+data = (56, 45, 83, 67, 59, 41, 77)
+print(sum(data))
+print(max(data))
+print(min(data))
