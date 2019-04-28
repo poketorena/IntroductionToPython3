@@ -2,9 +2,20 @@ list_a = [1, 2, 3]
 list_b = list_a
 list_c = [1, 2, 3]
 
-print(list_a is list_b)  # 同じオブジェクトかどうか比較する
+print(f"list_a {list_a}")
+print(f"list_b {list_b}")
+print(f"list_c {list_c}")
+
+list_a[0] = 99
 
 print()
-print(list_a == list_c)  # list_aとlist_cは同じ値だけど違うオブジェクト！
-print(list_a is list_c)
-print(list_a is not list_c)
+print(f"list_a {list_a}")
+print(f"list_b {list_b}")
+print(f"list_c {list_c}")
+
+list_b[1] = 100
+
+print()
+print(f"list_a {list_a}")
+print(f"list_b {list_b}")
+print(f"list_c {list_c}")
