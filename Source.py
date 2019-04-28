@@ -1,4 +1,6 @@
-data = (12, 15)
-(boy, girl) = data
-all = boy + girl
-print(boy, girl, all)
+numbers = (4, 8, 15, 16, 23, 42)
+num = int(input("受験番号を入力してください。："))
+if num in numbers:
+    print("合格です。")
+else:
+    print("不合格です。")
