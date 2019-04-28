@@ -1,4 +1,6 @@
-words = ["chest", "wind", "holiday", "knight", "silence", "hot"]
+words = ["peach", "ver3", "Python3", "Pokemon", "ver2"]
 print(words)
-words.sort(key=len)
+words.sort()
+print(words)
+words.sort(key=str.lower)
 print(words)
