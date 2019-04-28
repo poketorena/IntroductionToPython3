@@ -1,4 +1,10 @@
-letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-print(letters[::-1])  # 逆順に取り出す
-print(letters[::-2])  # 逆順に1個飛ばし
-print(letters[:-1][::-2])  # 最後から2番目から逆順に1個飛ばし
+list_a = [1, 2, 3]
+list_b = list_a
+list_c = [1, 2, 3]
+
+print(list_a is list_b)  # 同じオブジェクトかどうか比較する
+
+print()
+print(list_a == list_c)  # list_aとlist_cは同じ値だけど違うオブジェクト！
+print(list_a is list_c)
+print(list_a is not list_c)
