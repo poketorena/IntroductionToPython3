@@ -1,6 +1,4 @@
-import random
-
-numbers = list(range(10))
-print(numbers)
-random.shuffle(numbers)
-print(numbers)
+words = ["chest", "wind", "holiday", "knight", "silence", "hot"]
+print(words)
+words.sort(key=len)
+print(words)
