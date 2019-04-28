@@ -1,5 +1,5 @@
-import random
+import secrets
 
 fruits = ["apple", "orange", "banana", "peach"]
-dessert = random.choice(fruits)
+dessert = secrets.choice(fruits)
 print(dessert)
