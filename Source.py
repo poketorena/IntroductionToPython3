@@ -1,3 +1,3 @@
-numbers = [2.1, 4, "", 2.2, "1", 3]
-numbers = [num for num in numbers if isinstance(num, (int, float))]
-print(numbers)
+numbers = [4, 12, 21, 32, 8, 6, 11, 16]
+result = [num for num in numbers if num >= 5 if num % 2 == 0]
+print(result)
