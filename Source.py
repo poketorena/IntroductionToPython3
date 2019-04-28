@@ -1,4 +1,4 @@
 letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-print(letters[1:5][::2])  # 先に範囲でスライスする
-print(letters[::2][1:5])  # 先にステップでスライスする
-print(letters[1:5:2])  # 範囲とステップを同時に指定する
+print(letters[::-1])  # 逆順に取り出す
+print(letters[::-2])  # 逆順に1個飛ばし
+print(letters[:-1][::-2])  # 最後から2番目から逆順に1個飛ばし
