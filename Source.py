@@ -1,3 +1,2 @@
-data = (1, 2)
-data += (3,)
+data = tuple(range(-5, 6))
 print(data)
