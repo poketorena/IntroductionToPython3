@@ -1,2 +1,2 @@
 color_set = {"blue", "pink", "orange", "white"}
-print("red" in color_set)
+print("red" not in color_set)
