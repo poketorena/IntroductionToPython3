@@ -1,7 +1,5 @@
-fruits = set()
-fruits.add("apple")
-fruits.add("orange")
+fruits = {"apple", "orange", "banana", "peach"}
 print(fruits)
-
-fruits.add("orange")
+fruits.remove("banana")
 print(fruits)
+# fruits.remove("banana")
