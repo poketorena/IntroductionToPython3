@@ -1,2 +1,2 @@
-color_set = {"blue", "pink", "orange", "white", "black"}
-print(len(color_set))
+color_set = {"blue", "pink", "orange", "white"}
+print("red" in color_set)
