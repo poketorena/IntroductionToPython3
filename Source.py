@@ -1,4 +1,5 @@
-# bool_value = True && True
-bool_value = True and True
-
-print(bool_value)
+a = {"リンゴ", "みかん", "桃", "いちご"}
+b = {"いちご", "スイカ", "みかん", "バナナ"}
+c = {"いちご", "リンゴ"}
+d = a.intersection(b, c)  # 席集合を求める
+print(d)
