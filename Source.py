@@ -1,3 +1,4 @@
-numbers = [-1.3, 1.2, -1.2, 1.1, 1.5, -1.1, 1.2, 1.1, 1.4]
-num_set = {num for num in numbers if num > 0}
-print(num_set)
+a = {"りんご", "みかん", "桃", "いちご"}
+b = {"いちご", "スイカ", "みかん", "バナナ"}
+c = a | b  # 和集合を求める
+print(c)
