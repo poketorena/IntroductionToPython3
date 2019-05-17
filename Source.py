@@ -1,7 +1,7 @@
-a = {"earth", "wind", "fire"}
-b = {"sky", "sea"}
-c = {"fire", "water"}
-result1 = a.isdisjoint(b)  # aとbには共通部分がないのでTrue
-print(result1)
-result2 = a.isdisjoint(c)  # aとcにはどちらも"fire"があるのでFalse
-print(result2)
+a = {"blue", "red"}
+b = {"blue", "green", "red", "pink", "white"}
+c = ["blue", "green", "red", "pink", "white"]
+print(a.issubset(b))
+print(a.issubset(c))  # メソッドは引数にイテラブルを取れる！
+print(a <= b)
+# print(a <= c)
