@@ -1,7 +1,6 @@
-data = {"red", "blue", "green", "yellow"}
-data2 = {"blue", "black", "yellow"}
-
-# 対称差集合で更新する（排他的論理和の2つの集合に対してしか適応できないという理由から引数は1つ飲み取れる）
-data ^= data2
-
-print(data)
+a = {1, 2, 3}
+b = {3, 2, 1}
+c = {1, 2, 3, 4}
+print(a == b)  # aとbの要素が一致しているのでTrue
+print(a is b)  # 同一インスタンスでないのでFalse
+print(a == c)  # cはaの要素をすべて含んでいるが同一の要素のみを持っているわけではないのでFalseになる
