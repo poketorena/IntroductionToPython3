@@ -1,4 +1,7 @@
 a = {"リンゴ", "みかん", "桃", "いちご"}
 b = {"いちご", "スイカ", "みかん", "バナナ"}
-c = a ^ b
-print(c)
+c = ["いちご", "スイカ", "みかん", "バナナ"]
+d = a.symmetric_difference(b)
+e = a.symmetric_difference(c)
+print(d)
+print(e)
