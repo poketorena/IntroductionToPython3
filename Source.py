@@ -1,7 +1,5 @@
-a = {"リンゴ", "みかん", "桃", "いちご"}
-b = {"いちご", "スイカ", "みかん", "バナナ"}
-c = ["いちご", "スイカ", "みかん", "バナナ"]
-d = a.symmetric_difference(b)
-e = a.symmetric_difference(c)
-print(d)
-print(e)
+data = {"red", "blue"}
+data2 = {"blue", "yellow"}
+data3 = ["blue", "green"]  # メソッドなので引数はイテラブルならOK!
+data.update(data2, data3)  # 和集合で更新する
+print(data)
