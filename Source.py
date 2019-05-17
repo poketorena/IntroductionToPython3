@@ -1,6 +1,7 @@
-a = {1, 2, 3}
-b = {3, 2, 1}
-c = {1, 2, 3, 4}
-print(a != b)  # aとbの要素が一致しているのでFalse
-print(a is b)  # 同一インスタンスでないのでFalse
-print(a != c)  # aとcは違う要素を持っているのでTrue
+a = {"earth", "wind", "fire"}
+b = {"sky", "sea"}
+c = {"fire", "water"}
+result1 = a.isdisjoint(b)  # aとbには共通部分がないのでTrue
+print(result1)
+result2 = a.isdisjoint(c)  # aとcにはどちらも"fire"があるのでFalse
+print(result2)
