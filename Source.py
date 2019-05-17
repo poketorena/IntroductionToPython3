@@ -1,8 +1,6 @@
-data = {"red", "blue"}
-data2 = {"blue", "yellow"}
-data3 = {"blue", "green"}
+data = {"red", "blue", "green", "yellow"}
+data2 = {"blue", "black", "yellow"}
 
-data |= data2  # 和集合で置き換える
-data |= data3  # 和集合で置き換える
+data.intersection_update(data2)  # 積集合で更新する
 
 print(data)
