@@ -1,13 +1,3 @@
-metro = {
-    "G": "銀座線",  # コメント
-    "M": "丸ノ内線",  # コメント
-    "H": "日比谷線",
-    "T": "東西線",
-    "C": "千代田線",
-    "Z": "半蔵門線",
-    "N": "南北線",
-    "F": "副都心線"
-}
-print(metro)
-# 辞書の要素数
-print(len(metro))
+data = dict([("yellow", 3), ("blue", 6), ("green", 5)])
+print(data)
+print(type(data))
