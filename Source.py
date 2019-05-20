@@ -1,6 +1,4 @@
-number = {}  # 空の辞書を作る
-number["one"] = 1
-number["two"] = 2
-number["three"] = 3
-number["four"] = 4
-print(number)
+data = {"a": 10, "b": 20, "c": 30}  # 本の辞書
+newdata = {"a": 15, "d": 99}
+data.update(newdata)
+print(data)
