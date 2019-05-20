@@ -1,2 +1,2 @@
-data = dict(yellow=3, blue=6, green=5)
-print(data)
+stock = dict.fromkeys(["S", "M", "L"], 0)
+print(stock)
