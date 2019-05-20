@@ -9,3 +9,5 @@ metro = {
     "F": "副都心線"
 }
 print(metro)
+# 辞書の要素数
+print(len(metro))
