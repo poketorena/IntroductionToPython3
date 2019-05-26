@@ -1,5 +1,5 @@
-# 辞書の要素を削除するから再開する！
-fruit = {"apple": 7, "orange": 5, "mango": 3}
-print(fruit)
-fruit.clear()  # 要素をすべて削除する
-print(fruit)
+from random import randint
+
+keys = ["green", "red", "blue", "yellow"]
+data = {key: randint(1, 100) for key in keys}
+print(data)
