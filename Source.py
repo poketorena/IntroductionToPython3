@@ -1,5 +1,4 @@
-data = {"a": 100, "b": 200, "c": 300}
-data_b = data.copy()
-data_b["c"] = 0
-print(data)
-print(data_b)
+fruit = {"apple": 7, "orange": 5, "mango": 3, "peach": 6}
+fruit2 = dict.fromkeys(fruit, 0)
+print(fruit)
+print(fruit2)
