@@ -1,8 +1,1 @@
-import pprint
-from random import random
-
-data = {key: random() for key in "abcdefghijk"}
-
-print(data)
-print()
-pprint.pprint(data)
+# 辞書から値を取り出すから再開する
