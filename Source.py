@@ -1,10 +1,3 @@
-city = input("調べる地区名：")
 members = {"東京": 21, "大阪": 16, "福岡": 11}
-# 例外処理に組み込む
-try:
-    value=members[city]
-    print(f"{city}の値は{value}です。")
-except KeyError:
-    print(f"{city}のデータはありません。")
-except Exception as error:
-    print(error)
+print(members.get("福岡"))
+print(members.get("京都"))
