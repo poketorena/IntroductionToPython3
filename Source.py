@@ -1,15 +1,6 @@
-for value in range(5):
-    print(value)
+def price(adult, child):
+    return (adult * 1200) + (child * 500)
 
-print(value)
 
-hoge = 100
-
-if hoge == 100:
-    print(f"{str(hoge)}は{hoge}だよ")
-
-    if_hensu = 777
-else:
-    raise Exception()
-
-print(if_hensu)
+print(price(adult=1, child=2))
+print(price(child=2, adult=1))
