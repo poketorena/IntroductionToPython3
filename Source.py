@@ -1,6 +1,11 @@
-fruit = {"apple": 7, "orange": 5, "mango": 3, "peach": 6}
-print(fruit)
-poped_item = fruit.popitem()
-# LIFO
-print(poped_item)
-print(fruit)
+def calc(num):
+    unit_price = 180  # 単価
+    try:
+        num = float(num)  # 数値に変換する
+        return num * unit_price
+    except:
+        return None  # 変換がエラーになったらNoneを返す
+
+result = calc(2)
+
+print(result)
