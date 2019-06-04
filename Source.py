@@ -1,5 +1,7 @@
+v = 2
+
+
 def calc():
-    v = 2
     "ローカル変数"
     ans = 3 * v
     print(ans)
