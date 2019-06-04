@@ -1,11 +1,15 @@
-v = 2
+for value in range(5):
+    print(value)
 
+print(value)
 
-def calc():
-    v = v * 10
-    ans = 3 * v
-    print(ans)
+hoge = 100
 
+if hoge == 100:
+    print(f"{str(hoge)}は{hoge}だよ")
 
-# calc()を実行する
-calc()
+    if_hensu = 777
+else:
+    raise Exception()
+
+print(if_hensu)
