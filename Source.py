@@ -4,7 +4,7 @@ def calc():
     print(ans)
 
 
-v = 2
 # calc()を実行する
 calc()
+v = 2
 print(v)
