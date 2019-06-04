@@ -1,4 +1,3 @@
 fruit = {"apple": 7, "orange": 5, "mango": 3, "peach": 6}
-print(fruit.items())
-items = list(fruit.items())
-print(items)
+for key, value in fruit.items():
+    print(f"{key}が{value}個")
