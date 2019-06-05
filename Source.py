@@ -11,4 +11,5 @@ def route(start, end, *args):
 # routeを試す
 start = "東京"
 end = "宮崎"
-route(start, end, "神戸", "長崎", "熊本", "こなみ")
+# route(start, end, "神戸", "長崎", "熊本", "こなみ")
+route(start, end)
