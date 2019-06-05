@@ -1,15 +1,9 @@
-import sys
+import exchange  # exchangeモジュールを読み込む
 
-
-def calc(nums):
-    total = sum(nums)
-    print(f"合計：{total}")
-    if nums:  # numsが空ではないとき
-        ave = total / len(nums)
-        print(f"平均：{ave}")
-
-
-# コマンドライン引数で関数を実行する
-args = sys.argv[1:]  # 先頭のファイル名を除いたリスト
-nums = [float(num) for num in args]  # 数値のリストにする
-calc(nums)
+yen = 25000
+rate = 114.22  # 円/ドル（中間値）
+charge = 1.0  # 為替手数料
+dollar = exchange.yen2dollar(yen, rate, charge)
+# 四捨五入もどき
+print(f"{dollar:,.2f}ドル")
+# print(f"{dollar}ドル")
