@@ -1,10 +1,18 @@
-def hello():
-    print("ハロー")
+def do(func):
+    func()  # 引数で受け取った関数を実行する
 
 
-msg = hello  # 関数を代入する
+def thanks():
+    print("ありがとう")
 
-print(hello)
-print(msg)
 
-msg()  # 変数msgに入っている関数を実行する
+def hi():
+    print("やあ！")
+
+
+# do()を実行
+condition = 1
+if condition == 1:
+    do(thanks)
+else:
+    do(hi)
