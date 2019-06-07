@@ -1,18 +1,22 @@
-def do(func):
-    func()  # 引数で受け取った関数を実行する
+def calc(func, arg=1):
+    price = func(arg)
+    return price
 
 
-def thanks():
-    print("ありがとう")
+def child(arg):
+    return 400 * arg
 
 
-def hi():
-    print("やあ！")
+def adult(arg):
+    return 1200 * arg
 
 
-# do()を実行
-condition = 1
-if condition == 1:
-    do(thanks)
+# 年齢によって計算する関数を変える
+age = 12
+num = 3
+if age < 16:
+    price = calc(child, num)
 else:
-    do(hi)
+    price = calc(adult, num)
+
+print(f"{age}歳、{num}人は{price}円です。")
