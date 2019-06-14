@@ -1,6 +1,7 @@
-sizelist = ["XS", "S", "M", "L"]  # この順に並び替える
+def double(x):
+    return x * 2
 
-# 並び替えるリスト
-data = ["S", "M", "XS", "L", "M", "M", "XS", "S", "M", "L", "M"]
-data.sort(key=lambda item: sizelist.index(item))
-print(data)
+
+nums = [4, 3, 7, 6, 2, 1]
+num2 = list(map(double, nums))
+print(num2)
