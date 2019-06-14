@@ -1,3 +1,10 @@
-price = lambda burger=1, potato=0: burger * 240 + potato * 100
-num = price(potato=2)
-print(num)
+def size(item):
+    sizelist = ["XS", "S", "M", "L"]  # この順に並び替える
+    pos = sizelist.index(item)  # itemのインデックス番号を値として返す
+    return pos
+
+
+# 並び替えるリスト
+data = ["S", "M", "XS", "L", "M", "M", "XS", "S", "M", "L", "M"]
+data.sort(key=size)
+print(data)
