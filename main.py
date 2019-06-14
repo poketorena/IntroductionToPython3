@@ -1,22 +1,19 @@
-def calc(func, arg=1):
-    price = func(arg)
-    return price
+# クロージャの適宜
+def charge(price):
+    # 関数の実態
+    def calc(num):
+        return price * num
+
+    return calc
 
 
-def child(arg):
-    return 400 * arg
+# クロージャ（関数オブジェクト）を2個作る
+child = charge(400)  # 子供料金400円
+adult = charge(1000)  # 大人料金1000円
 
+# 料金を計算する
+price1 = child(3)  # 子供3人
+price2 = adult(2)  # 大人2人
 
-def adult(arg):
-    return 1200 * arg
-
-
-# 年齢によって計算する関数を変える
-age = 12
-num = 3
-if age < 16:
-    price = calc(child, num)
-else:
-    price = calc(adult, num)
-
-print(f"{age}歳、{num}人は{price}円です。")
+print(price1)
+print(price2)
