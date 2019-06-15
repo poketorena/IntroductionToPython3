@@ -1,4 +1,14 @@
-odd_gen = (odd for odd in range(1, 6, 2))
+def testgen():
+    n = 0
+    while True:
+        received = yield n
+        if received:
+            n = received
+        else:
+            n = n + 1
 
-print(odd_gen)
-print(list(odd_gen))
+
+gen = testgen()
+print(next(gen))
+print(next(gen))
+print(next(gen))
