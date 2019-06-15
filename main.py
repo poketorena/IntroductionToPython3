@@ -1,14 +1,19 @@
-from myclass.datalog import Datalog
+class Greet():
+    def hello(self):
+        print("やあ！")
+
+    def bye(self):
+        print("さようなら")
 
 
-class MyData(Datalog):
-    def printlog(self):
-        for date, data in self.loglist:
-            print(date, data)
+class Greet2(Greet):
+    def hello(self, name=None):
+        if name:
+            print(name + "さんこんにちは！")
+        else:
+            super().hello()
 
 
-obj = MyData()
-obj.log("あいう")
-obj.log("abc")
-obj.log(123)
-obj.printlog()
+obj = Greet2()
+obj.hello("井上")
+obj.hello()
