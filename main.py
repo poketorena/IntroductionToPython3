@@ -1,9 +1,9 @@
 from car_class import Car
 
 car1 = Car.Car()
-car1.drive(15)
-car1.drive(20)
+car2 = Car.Car("red")
+car3 = Car.Car("blue")
 
-car2 = Car.Car()
-car2.drive(10)
-car1.drive(10)
+print(car1.mynumber)
+print(car2.mynumber)
+print(car3.mynumber)
