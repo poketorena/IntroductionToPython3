@@ -1,5 +1,10 @@
-from person import Person
+from goods_property import Goods
 
-man = Person("宇佐美")
-man.who()
-print(man.__name)
+shoes = Goods("dream", 6800)
+print(shoes.name)
+shoes.name = "Dream 8"
+print(shoes.name)
+
+print(shoes.price)
+
+shoes.price = 7200
