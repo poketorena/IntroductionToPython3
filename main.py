@@ -9,9 +9,5 @@ def menu_generator():
 menu = menu_generator()
 print(type(menu))
 
-print(next(menu))
-print(next(menu))
-print(next(menu))
-print(next(menu))
-print(next(menu))
-print(next(menu))
+for item in menu:
+    print(item)
