@@ -1,17 +1,23 @@
-def fizzbuzz():
-    n = 1
-    while True:
-        if n % 15 == 0:
-            yield "FizzBuzz"
-        elif n % 3 == 0:
-            yield "Fizz"
-        elif n % 5 == 0:
-            yield "Buzz"
+def word_quiz(word):
+    hint = ""
+    for letter in word:
+        hint += letter
+        yield hint
+
+
+ans = "Python"
+quiz = word_quiz(ans)
+while True:
+    try:
+        hint = next(quiz)
+        print(hint)
+        word = input("この単語は？：")
+        if ans.lower() == word.lower():
+            point = len(ans) - len(hint)
+            print(f"正解です！得点：{point}")
+            break
         else:
-            yield str(n)
-        n += 1
-
-
-game = fizzbuzz()
-for i in range(0, 20):
-    print(next(game))
+            print("違います。")
+    except:
+        print("終了です。得点：0")
+        break
