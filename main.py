@@ -2,5 +2,11 @@ class Simple:
     pass
 
 
-Simple.x = 100
-print(Simple.x * 2)
+def hello(msg="ハロー"):
+    print(msg)
+
+
+Simple.greeting = hello
+
+Simple.greeting("おはよう！")
+Simple.greeting()
