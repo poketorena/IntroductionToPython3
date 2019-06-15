@@ -1,20 +1,18 @@
-def testgen():
-    n = 0
-    while True:
-        received = yield n
-        if received:
-            n = received
-        else:
-            n = n + 1
+def main_gen(n):
+    yield "start"
+    yield from range(n, 0, -1)  # サブイテレータから値を作る
+    yield from "abc"  # サブイテレータから値を作る
+    yield from [10, 20, 30]  # サブイテレータから値を作る
+    yield from sub_gen()
+    yield "end"
 
 
-gen = testgen()
-print(next(gen))
-print(next(gen))
-print(next(gen))
+# サブジェネレータ
+def sub_gen():
+    yield "X"
+    yield "Y"
+    yield "Z"
 
-gen.send(10)
 
-print(next(gen))
-print(next(gen))
-print(next(gen))
+gen = main_gen(3)
+print(list(gen))
