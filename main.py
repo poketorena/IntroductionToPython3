@@ -1,9 +1,17 @@
-colors = ["red", "blue", "green", "yellow"]
-colors_iter = iter(colors)
-type_dayo = type(colors_iter)
+def menu_generator():
+    yield "ワイン"
+    yield "サラダ"
+    yield "スープ"
+    yield "ステーキ"
+    yield "アイスクリーム"
 
-print(next(colors_iter))
-print(next(colors_iter))
-print(next(colors_iter))
-print(next(colors_iter))
-print(next(colors_iter))
+
+menu = menu_generator()
+print(type(menu))
+
+print(next(menu))
+print(next(menu))
+print(next(menu))
+print(next(menu))
+print(next(menu))
+print(next(menu))
