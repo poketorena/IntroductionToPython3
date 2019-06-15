@@ -17,5 +17,10 @@ def sax(phrase="ブーブー"):
 obj1.play = drum
 obj2.play = sax
 
+# 追加したメンバーを削除
+obj1.play = None
+del obj2.play
+
+# 削除したので呼び出すことはできない！
 obj1.play()
 obj2.play()
