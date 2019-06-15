@@ -12,3 +12,9 @@ gen = testgen()
 print(next(gen))
 print(next(gen))
 print(next(gen))
+
+gen.send(10)
+
+print(next(gen))
+print(next(gen))
+print(next(gen))
