@@ -1,13 +1,14 @@
-class A:  # Aクラス
-    def hello(self):
-        print("ハロー")
+from myclass.datalog import Datalog
 
 
-class B(A):
-    def bye(self):
-        print("グッバイ")
+class MyData(Datalog):
+    def printlog(self):
+        for date, data in self.loglist:
+            print(date, data)
 
 
-obj = B()
-obj.hello()
-obj.bye()
+obj = MyData()
+obj.log("あいう")
+obj.log("abc")
+obj.log(123)
+obj.printlog()
