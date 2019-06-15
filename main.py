@@ -2,7 +2,6 @@ class Simple:
     pass
 
 
-Simple.greeting = lambda msg="ハロー": print(msg)
-
-Simple.greeting("おはよう！")
-Simple.greeting()
+obj = Simple()
+obj.a = 123
+print(obj.a)
