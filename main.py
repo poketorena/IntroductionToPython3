@@ -1,19 +1,17 @@
-def num_generator():
-    n = 0
+def fizzbuzz():
+    n = 1
     while True:
-        num = n * n + 2 * n + 3
-        yield num
+        if n % 15 == 0:
+            yield "FizzBuzz"
+        elif n % 3 == 0:
+            yield "Fizz"
+        elif n % 5 == 0:
+            yield "Buzz"
+        else:
+            yield str(n)
         n += 1
 
 
-# 何かを扱う関数
-def do_something(num):
-    return (num % 2, num % 3)
-
-
-# ジェネレータが返す値を使って処理を行う
-gen = num_generator()
-for i in range(1, 10):
-    num = next(gen)
-    result = do_something(num)
-    print(result)
+game = fizzbuzz()
+for i in range(0, 20):
+    print(next(game))
