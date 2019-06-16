@@ -1,4 +1,6 @@
-file="./data/fox.txt"
+file = "./data/fox.txt"
 with open(file) as fileobj:
-    text=fileobj.read()
-    print(text)
+    text = fileobj.read()
+    newtext = text.rstrip(".")
+    wordlist = newtext.split(" ")
+    print(wordlist)
