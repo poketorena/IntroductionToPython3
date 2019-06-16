@@ -1,5 +1,4 @@
 file="./data/fox.txt"
-fileobj=open(file)
-text=fileobj.read()
-fileobj.close()
-print(text)
+with open(file) as fileobj:
+    text=fileobj.read()
+    print(text)
