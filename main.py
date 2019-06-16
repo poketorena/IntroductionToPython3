@@ -1,10 +1,13 @@
 import matplotlib.pyplot as plt
-import math
 
-x = range(0, 360)
-s = [math.sin(math.radians(d)) for d in x]
-c = [math.cos(math.radians(d)) for d in x]
-plt.plot(x, s)
-plt.plot(x, c)
-plt.savefig("sin_and_cos_graph.png")
+x = [100, 200, 300, 400, 500]
+y1 = [40, 65, 80, 100, 90]
+y2 = [34, 56, 75, 91, 79]
+y3 = [25, 47, 68, 76, 73]
+y4 = [15, 40, 52, 64, 69]
+
+plt.plot(x, y1, marker="o", color="blue", linestyle="-")
+plt.plot(x, y2, marker="v", color="red", linestyle="--")
+plt.plot(x, y3, marker="^", color="green", linestyle="-.")
+plt.plot(x, y4, marker="d", color="m", linestyle=":")
 plt.show()
