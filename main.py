@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
-data = [2, 2.3, 4.1, 2.4, 5.3, 3.2, 4.6]
-plt.plot(data)
+price = [200, 300, 400, 500, 600]
+count = [31, 29, 25, 28, 26]
+plt.plot(price, count)
 plt.show()
