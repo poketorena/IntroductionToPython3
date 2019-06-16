@@ -1,12 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x1 = np.random.rand(100)
-y1 = np.random.rand(100)
-
-x2 = np.random.rand(100)
-y2 = np.random.rand(100)
-
-plt.scatter(x1, y1, marker="+", color="green")
-plt.scatter(x2, y2, marker="^", color="red")
+x, y = np.random.rand(100), np.random.rand(100)
+plt.scatter(x, y, marker="o", s=500, color="cyan", alpha=0.5, linewidths=2, edgecolors="b")
 plt.show()
