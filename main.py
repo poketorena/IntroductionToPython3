@@ -1,9 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x, y = np.random.rand(100), np.random.rand(100)
-v = np.random.rand(100)
-plt.scatter(x, y, s=200, c=v, cmap="Blues", edgecolors="green")
-plt.colorbar()
-plt.grid(True)
+labels = ["E", "D", "C", "B", "A"]
+v = [17, 25, 47, 68, 91]
+ex = 0, 0, 0.1, 0, 0  # パイの切り出し
+plt.pie(v, explode=ex, labels=labels, autopct='%1.1f%%', startangle=90)
 plt.show()
