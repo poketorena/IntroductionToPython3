@@ -1,15 +1,7 @@
 import numpy as np
 
-a = np.array([1, 2, 3, 4, 5])
-b = np.array([[0, 1], [2, 3], [4, 5]])
-a_list = a.tolist()
-b_list = b.tolist()
+a = np.array(list(range(10, 60, 10)))
 print(a)
-print(b)
-print(a_list)
-print(b_list)
-
-print(type(a))
-print(type(b))
-print(type(a_list))
-print(type(b_list))
+print(a[0])
+print(a[1])
+print(a[-1])
