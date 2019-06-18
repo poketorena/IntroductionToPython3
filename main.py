@@ -1,9 +1,5 @@
 import numpy as np
 
-a = np.arange(10, 70, 10).reshape(2, 3)
-
-print(a)
-
-for (row_index, column_index), item in np.ndenumerate(a):
-    # iには(行, 列)のタプルが入る
-    print(row_index, column_index, item)
+a = np.array([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3])
+# 5以上の値を抽出した配列を作る
+print(a[a >= 5])
