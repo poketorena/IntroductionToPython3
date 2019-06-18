@@ -1,8 +1,8 @@
 import numpy as np
 
-data = [1, 2, 3, 4, 5, 6, 7]
-a = np.array(data)
+a = np.array([[0, 1], [2, 3], [4, 5]])
+
 print(a)
 
-a = a.reshape(2, 3)
-print(a)
+print(a.shape)
+print(a.ndim)
