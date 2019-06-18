@@ -1,24 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x1, y1 = range(0, 7), [61, 45, 27, 88, 47, 56, 61]
-x2, y2 = range(0, 5), [77, 49, 56, 47, 67]
-x3, y3 = range(0, 4), [56, 41, 67, 76]
+x1, y1 = range(0, 5), [61, 45, 27, 88, 47]
+x2, y2 = range(0, 5), [17, 39, 46, 40, 27]
 
-labels = ["A", "B", "C", "D", "E", "F", "G"]
+labels = ["A", "B", "C", "D", "E"]
 fig = plt.figure()
 
-# 2行1列の上
-ax1 = fig.add_subplot(2, 1, 1)
+# 1行2列の左
+ax1 = fig.add_subplot(1, 2, 1)
 ax1.bar(x1, y1, color="b", tick_label=labels)
 ax1.set_title("dog")
-# 2行2列の3番（下の左）
-ax2 = fig.add_subplot(2, 2, 3)
-ax2.bar(x2, y2, color="g", tick_label=labels[:5])
+ymin, ymax = plt.ylim()  # 現在のY軸のレンジを取得する
+# 1行2列の右
+ax2 = fig.add_subplot(1, 2, 2)
+ax2.bar(x2, y2, color="g", tick_label=labels)
 ax2.set_title("cat")
-# 2行2列の4番（下の右）
-ax3 = fig.add_subplot(2, 2, 4)
-ax3.bar(x3, y3, color="c", tick_label=labels[:4])
-ax3.set_title("bird")
-plt.tight_layout()
+plt.ylim(ymin, ymax)
 plt.show()
