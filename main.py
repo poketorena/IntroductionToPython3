@@ -1,8 +1,8 @@
 import numpy as np
 
-a = np.array([2.1, 3.8, 2.5, 4.3, 5.1, 1.6]).reshape(3, 2)
+a = np.arange(0, 100, 10)
 
 print(a)
 
-a2 = a[:2, ].astype(int)
-print(a2)
+for item in a:
+    print(item)
