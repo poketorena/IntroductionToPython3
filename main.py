@@ -1,16 +1,18 @@
 import numpy as np
 
-a = np.array(list(range(10, 50, 10)))
-# 浅いコピーと深いコピーのどちらを実行するか自動で判断される
-b = a.copy()
-b = b.reshape(2, 2)
+a = np.array(list(range(0, 100, 10)))
 
-print(a)
-print(b)
+# 全ての要素を複製
+print(a[:])
 
-print(a is b)
+# 最初からインデックス番号3まで
+print(a[:4])
 
-b[0, 0] = 99
-# 同じオブジェクトでないのにbの要素の変更がaに影響してしまう！
-print(b)
-print(a)
+# インデックス番号4から最後まで
+print(a[4:])
+
+# インデックス番号3～6
+print(a[3:7])
+
+# 先頭から1個飛び
+print(a[::2])
