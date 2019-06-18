@@ -1,7 +1,6 @@
 import numpy as np
 
-d = np.array([1, 1.5, 2], dtype="<U")  # 文字列型で作る
-print(d)
-
-e = np.array([9.129, 10.5, 12.17], dtype="<U4")
-print(e)
+a_int = np.array([0, 1, 2, 3, 4, 5])
+print(a_int)
+a_float = np.array(a_int, dtype=float)
+print(a_float)
