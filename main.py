@@ -1,5 +1,8 @@
 import numpy as np
 
-words = np.array(["dog", "cat", "bird"])
-new_words = np.delete(words, len(words) - 1)
-print(new_words)
+a = np.array([[0, 1], [2, 3], [4, 5]])
+b = np.transpose(a)
+c = a.T
+print(a)
+print(b)
+print(c)
