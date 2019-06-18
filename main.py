@@ -1,8 +1,9 @@
 import numpy as np
 
-a = np.arange(0, 100, 10)
+a = np.arange(10, 70, 10).reshape(2, 3)
 
 print(a)
 
-for item in a:
-    print(item)
+for i, item in np.ndenumerate(a):
+    # iには(行, 列)のタプルが入る
+    print(i, item)
