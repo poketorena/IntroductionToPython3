@@ -1,3 +1,7 @@
 import numpy as np
 
-print(np.arange(10))
+n = 3
+m = 4
+
+arr = np.arange(n * m).reshape(n, m)
+print(arr)
