@@ -1,15 +1,7 @@
 import numpy as np
 
-a = np.arange(10, 50, 10).reshape(2, 2)
+p0=np.array((1,1))
+p1=np.array((6,4))
+a=p1-p0
+print(type(a))
 print(a)
-b = a + 5
-c = a - 5
-d = a * 2
-e = a / 2
-f = a // 2
-print("a", a)
-print("b", b)
-print("c", c)
-print("d", d)
-print("e", e)
-print("f", f)
