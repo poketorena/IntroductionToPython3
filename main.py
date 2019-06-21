@@ -1,6 +1,6 @@
+import math
 import numpy as np
 
-a = np.array([1, 2, 0])
-b = np.array([0, 1, -1])
-c = np.cross(a, b)  # 外積（右手系（右手の親指a、人差し指b、中指c））
-print(c)
+data = [0.0, 0.28, 0.57, 0.85, 1.14, 1.42, 1.71, 1.99, 2.28, 2.57, 2.85, 3.14]
+# print(math.sin(data))
+print(np.sin(data))
