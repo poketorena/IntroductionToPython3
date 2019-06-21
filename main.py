@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sigma = 2.5
-mu = 50
-data = sigma * np.random.randn(2, 3) + mu
-print(data)
+result = np.random.binomial(n=100, p=0.1, size=(2, 3))
+print(result)
