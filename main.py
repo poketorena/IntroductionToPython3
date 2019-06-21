@@ -1,4 +1,4 @@
 import numpy as np
 
-one = np.ones((2, 3), dtype=int)
-print(one)
+data = np.array([1, 2, 3])
+print(data.repeat(3).reshape(3, 3))
