@@ -1,11 +1,12 @@
 from sklearn import datasets
-digits=datasets.load_digits()
+import matplotlib.pyplot as plt
 
-print(dir(digits))
+digits = datasets.load_digits()
 
-print(digits.DESCR)
+print(digits.data[0])
+print(digits.images[0])
 
-print(digits.data.shape)
-print(digits.data)
-print(digits.target.shape)
-print(digits.target)
+plt.matshow(digits.images[0], cmap="Greys")
+plt.show()
+
+print(digits.target[0])
