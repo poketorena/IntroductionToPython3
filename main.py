@@ -1,15 +1,11 @@
 import numpy as np
 
-p0 = np.array((1, 1))
-p1 = np.array((6, 4))
-a = p1 - p0
-print(type(a))
-print("a", a)
+a = np.array([56, 45, 83, 67, 59, 41]).reshape(2, 3)
+print(a)
+print(a.sum())  # 全体の合計
 
-a_norm = np.linalg.norm(a)
-print(a_norm)
+print(a.sum(axis=0))  # 各列の合計
+print(a.sum(0))  # 各列の合計
 
-a2 = a * 2
-print("a2", a2)
-a2_norm = np.linalg.norm(a2)
-print(a2_norm)
+print(a.sum(axis=1))  # 各行の合計
+print(a.sum(1))  # 各行の合計
