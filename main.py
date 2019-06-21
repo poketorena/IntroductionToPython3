@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.random.poisson(lam=50, size=1000)
-count, bins_edges, patches = plt.hist(data, bins=100)  # ヒストグラム
-plt.grid()
-plt.show()
+np.random.seed(10)
+print(np.random.randn(3))
+
+print(np.random.seed(10))
+print(np.random.randn(3))
