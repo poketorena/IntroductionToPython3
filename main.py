@@ -1,10 +1,7 @@
 import numpy as np
 
-e1 = np.identity(4)
-print(e1)
+zero = np.zeros(9, dtype=int)
+print(zero)
 
-e2 = np.eye(3)
-print(e2)
-
-e3 = np.identity(5, dtype=int)
-print(e3)
+one = np.ones(10)
+print(one)
