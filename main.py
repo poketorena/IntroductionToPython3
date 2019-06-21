@@ -6,3 +6,7 @@ b = np.array([10, 20, 30, 40]).reshape(2, 2)
 print(b)
 c = a + b
 print(c)
+d = a * b
+e = a / b
+print(d)
+print(e)
