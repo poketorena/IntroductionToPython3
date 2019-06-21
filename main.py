@@ -1,7 +1,4 @@
 import numpy as np
 
-zero = np.zeros(9, dtype=int)
-print(zero)
-
-one = np.ones(10)
+one = np.ones((2, 3), dtype=int)
 print(one)
