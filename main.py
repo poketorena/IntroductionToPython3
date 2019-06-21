@@ -1,12 +1,8 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
-data = np.arange(6).reshape(2, 3)
-print(data)
-print()
+x = np.random.rand(100)
+y = np.random.rand(100)
 
-# 行を2回繰り返す
-print(data.repeat(2, axis=0))
-print()
-
-# 列を2回繰り返す
-print(data.repeat(2, axis=1))
+plt.scatter(x, y)
+plt.show()
