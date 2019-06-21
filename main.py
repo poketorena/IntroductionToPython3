@@ -1,7 +1,11 @@
-import pandas as pd
+from sklearn import datasets
+digits=datasets.load_digits()
 
-df = pd.read_csv("data.csv")
-header = df.columns.values
-data = df.values
-print(header)
-print(data)
+print(dir(digits))
+
+print(digits.DESCR)
+
+print(digits.data.shape)
+print(digits.data)
+print(digits.target.shape)
+print(digits.target)
