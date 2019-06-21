@@ -22,12 +22,15 @@ print(clf.score(x_test, y_test))
 predicted = clf.predict(x_test)
 print((y_test != predicted).sum())
 
+# 学習結果のレポート
 print(metrics.classification_report(y_test, predicted))
 
+# 数字ごとに正解数と読み間違えた数字を調べる（混同行列）
 print(metrics.confusion_matrix(y_test, predicted))
 
 imgs_yt_preds = list(zip(digits.images[n_train:], y_test, predicted))
 
+# 画像イメージと分類結果（404～415の12文字を表示）
 for index, (image, y_t, pred) in enumerate(imgs_yt_preds[404:416]):
     plt.subplot(3, 4, index + 1)
     plt.axis("off")
