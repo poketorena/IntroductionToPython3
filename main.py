@@ -1,3 +1,4 @@
 import numpy as np
 
-print(np.arange(10, 20, 2))
+arr = np.arange(10, step=0.5)
+print(arr)
