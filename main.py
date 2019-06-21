@@ -1,4 +1,7 @@
-import numpy as np
+import pandas as pd
 
-data = np.loadtxt("data.csv", delimiter=",", skiprows=1)
+df = pd.read_csv("data.csv")
+header = df.columns.values
+data = df.values
+print(header)
 print(data)
