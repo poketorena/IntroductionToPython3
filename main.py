@@ -1,8 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.random.rand(100)
-y = np.random.rand(100)
-
-plt.scatter(x, y)
-plt.show()
+sigma = 2.5
+mu = 50
+data = sigma * np.random.randn(2, 3) + mu
+print(data)
