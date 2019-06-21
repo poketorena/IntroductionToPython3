@@ -1,10 +1,8 @@
 import numpy as np
 
-a = np.array([5, 3])
-b = np.array([4, -2])
-c = a + b
-d = a - b
+a = np.array([1, 2, 3, 4]).reshape(2, 2)
 print(a)
+b = np.array([100, 200])
 print(b)
+c = a + b
 print(c)
-print(d)
