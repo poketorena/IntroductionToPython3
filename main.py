@@ -1,6 +1,6 @@
 import numpy as np
 
-a = np.array([[1, 2], [3, 4]])
-b = np.array([[5, 6], [7, 8]])
-c = np.dot(a, b)
-print(c)
+f = np.array([8.66, 5.0])
+s = np.array([20, 0])
+w = np.dot(f, s)
+print(w)
