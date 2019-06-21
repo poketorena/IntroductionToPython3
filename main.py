@@ -1,5 +1,4 @@
 import numpy as np
 
-data = np.arange(9).reshape(3, 3)
-np.random.shuffle(data)
+data = np.loadtxt("data.csv", delimiter=",", skiprows=1)
 print(data)
