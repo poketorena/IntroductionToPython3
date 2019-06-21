@@ -1,10 +1,6 @@
 import numpy as np
 
-f = np.array([8.66, 5.0])
-s = np.array([20, 0])
-
-f = np.linalg.norm(f)
-s = np.linalg.norm(s)
-rad = np.radians(30)  # 30度をラジアンに換算
-w = f * s * np.cos(rad)
-print(w)
+a = np.array([1, 2, 0])
+b = np.array([0, 1, -1])
+c = np.cross(a, b)  # 外積（右手系（右手の親指a、人差し指b、中指c））
+print(c)
