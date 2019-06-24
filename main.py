@@ -1,27 +1,19 @@
 from sklearn import datasets
-import matplotlib.pyplot as plt
+from sklearn import svm
+from sklearn.model_selection import ShuffleSplit
 
-iris = datasets.load_iris()
+iris = datasets.load_iris()  # アヤメのデータセットを読み込む
 
-print(dir(iris))
+x = iris.data  # データ
+y = iris.target  # ターゲット
 
-print(iris.DESCR)
+ss = ShuffleSplit(train_size=0.6, test_size=0.4, random_state=0)
 
-x = iris.data
-y = iris.target
+train_index, test_index = next(ss.split(x))  # 分割するインデックス番号
+x_train, y_train = x[train_index], y[train_index]  # 訓練データ
+x_test, y_test = x[test_index], y[test_index]  # テストデータ
 
-print(x)
-print(x.shape)
-print(y)
-print(y.shape)
+clf = svm.SVC()  # モデルを作る
+clf.fit(x_train, y_train)  # 学習する
 
-print(iris.feature_names)
-
-for i, cl, mk, lb in zip([0, 1, 2], "rgb", "o+x", iris.target_names):
-    plt.scatter(x[y == i][:, 0], x[y == i][:, 1], color=cl, marker=mk, label=lb)
-
-plt.title("iris Plants Database")
-plt.xlabel("sepal length (cm)")
-plt.ylabel("sepal width (cm)")
-plt.legend()
-plt.show()
+print(clf.score(x_test, y_test))
