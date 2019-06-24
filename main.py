@@ -7,8 +7,8 @@ print(dir(iris))
 
 print(iris.DESCR)
 
-x=iris.data
-y=iris.target
+x = iris.data
+y = iris.target
 
 print(x)
 print(x.shape)
@@ -17,10 +17,8 @@ print(y.shape)
 
 print(iris.feature_names)
 
-
-plt.scatter(x[:50,0],x[:50,1],color="r",marker="o",label="setosa")
-plt.scatter(x[50:100,0],x[50:100,1],color="g",marker="+",label="versicolor")
-plt.scatter(x[100:,0],x[100:,1],color="b",marker="x",label="virginica")
+for i, cl, mk, lb in zip([0, 1, 2], "rgb", "o+x", iris.target_names):
+    plt.scatter(x[y == i][:, 0], x[y == i][:, 1], color=cl, marker=mk, label=lb)
 
 plt.title("iris Plants Database")
 plt.xlabel("sepal length (cm)")
