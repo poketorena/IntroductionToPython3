@@ -1,19 +1,13 @@
 from sklearn import datasets
-from sklearn import linear_model
-from sklearn.model_selection import ShuffleSplit
+from pandas import DataFrame
 
-iris = datasets.load_iris()  # アヤメのデータセットを読み込む
+boston = datasets.load_boston()
 
-x = iris.data  # データ
-y = iris.target  # ターゲット
+print(dir(boston))
 
-ss = ShuffleSplit(train_size=0.6, test_size=0.4, random_state=0)
+print(boston.DESCR)
 
-train_index, test_index = next(ss.split(x))  # 分割するインデックス番号
-x_train, y_train = x[train_index], y[train_index]  # 訓練データ
-x_test, y_test = x[test_index], y[test_index]  # テストデータ
-
-clf = linear_model.LogisticRegression()  # 学習機のアルゴリズムを変えてみる
-clf.fit(x_train, y_train)  # 学習する
-
-print(clf.score(x_test, y_test))
+boston_df = DataFrame(boston.data)  # DataFrame型にする
+boston_df.columns = boston.feature_names  # 列名を指定する（列名を名前で取り出せるようになる）
+boston_df["Price"] = boston.target  # 住宅価格を追加する
+print(boston_df[:5])
