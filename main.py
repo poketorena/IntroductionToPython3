@@ -1,8 +1,14 @@
+from sklearn import datasets
+from pandas import DataFrame
 import matplotlib.pyplot as plt
-import numpy as np
+import seaborn as sns
 
-labels = ["E", "D", "C", "B", "A"]
-v = [17, 25, 47, 68, 91]
-ex = 0, 0, 0.1, 0, 0  # パイの切り出し
-plt.pie(v, explode=ex, labels=labels, autopct='%1.1f%%', startangle=90)
+# データセットを読み込む
+boston = datasets.load_boston()
+boston_df = DataFrame(boston.data)
+boston_df.columns = boston.feature_names  # 列名を指定する
+boston_df["Price"] = boston.target  # 住宅価格を追加する
+# 部屋数と住宅価格から回帰直線を引く
+sns.set_style("whitegrid")
+sns.lmplot(x="RM", y="Price", data=boston_df)
 plt.show()
